@@ -4,7 +4,7 @@
 services:
   - type: "static_site"
     name: "worktrack-pro-frontend"
-    repo: "https://github.com/<your-org-or-user>/<repo-name>"
+    repo: "https://github.com/YasirIsmail-2003/Work-Track-Pro.git"
     branch: "main"
     buildCommand: "npm install && npm run build"
     staticPublishPath: "dist"
@@ -13,9 +13,8 @@ services:
 
   - type: "web_service"
     name: "worktrack-pro-server"
-    repo: "https://github.com/<your-org-or-user>/<repo-name>"
+    repo: "https://github.com/YasirIsmail-2003/Work-Track-Pro.git"
     branch: "main"
-    env: "node"
     plan: "free"
     buildCommand: "cd server && npm install && npm run build"
     startCommand: "cd server && npm run start"
