@@ -15,9 +15,8 @@
     "bcrypt": "^5.1.0",
     "next": "^14.0.0",
     "nodemailer": "^6.9.4",
-    "pg": "^8.11.0",
-    "vite_react_shadcn_ts": "file:..",
-    "zod": "^3.23.2"
+  "pg": "^8.11.0",
+  "zod": "^3.23.2"
   },
   "engines": {
     "node": "18.x"
