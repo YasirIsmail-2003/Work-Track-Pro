@@ -16,9 +16,13 @@ services:
     repo: "https://github.com/YasirIsmail-2003/Work-Track-Pro.git"
     branch: "main"
     plan: "free"
-    buildCommand: "cd server && npm install && npm run build"
+    # Use npm ci for reproducible installs in CI, build inside server/
+    buildCommand: "cd server && npm ci && npm run build"
     startCommand: "cd server && npm run start"
-    envVars: []
+    envVars:
+      - key: "NODE_VERSION"
+        value: "18"
+        secure: false
     autoDeploy: true
 
 # Notes:
