@@ -19,7 +19,7 @@
   "zod": "^3.23.2"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
